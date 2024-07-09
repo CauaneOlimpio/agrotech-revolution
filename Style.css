@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #87CEEB; /* Céu azul */
+    color: #2F4F4F; /* Cor de texto escuro */
+}
+
+#controls {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #6B8E23; /* Verde oliva */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #556B2F; /* Verde oliva escuro */
+}
+
+#farm {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    gap: 5px;
+    justify-content: center;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #8B4513; /* Marrom escuro */
+    background-color: #DEB887; /* Bege (cor da terra) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tile.planted {
+    background-color: #228B22; /* Verde floresta */
+}
+
+.tile.watered {
+    background-color: #1E90FF; /* Azul dodger */
+}
