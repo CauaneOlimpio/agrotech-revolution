@@ -1,19 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroTech Revolution</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Conexão Campo e Cidade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #a0c4ff, #b9fbc0);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #005f73, #0a9396);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav {
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #005f73;
+            border-bottom: 2px solid #0a9396;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .section-img {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .section-img img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #005f73;
+            color: white;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #0a9396;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #005f73;
+        }
+    </style>
 </head>
 <body>
-    <h1>AgroTech Revolution</h1>
-    <div id="controls">
-        <button id="plant">Plant</button>
-        <button id="water">Water</button>
-        <button id="harvest">Harvest</button>
+    <header>
+        <h1>Conexão Campo e Cidade</h1>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#impacto">Impacto da Urbanização</a></li>
+                <li><a href="#inovacao">Inovação Rural</a></li>
+                <li><a href="#colaboracao">Colaboração</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>A interação entre o campo e a cidade é fundamental para o desenvolvimento sustentável e a inovação. A urbanização tem um impacto significativo nas áreas rurais, enquanto a tecnologia e os recursos do campo desempenham um papel crucial nas cidades.</p>
+            <div class="section-img">
+                <img src="https://source.unsplash.com/1600x900/?rural,urban" alt="Campo e Cidade">
+            </div>
+        </section>
+
+        <section id="impacto">
+            <h2>Impacto da Urbanização</h2>
+            <p>A urbanização traz desafios e oportunidades para o campo. A migração para as cidades altera o uso da terra, a demanda por produtos agrícolas e as dinâmicas econômicas. Explore como essas mudanças afetam tanto o ambiente rural quanto urbano.</p>
+            <div class="section-img">
+                <img src="https://source.unsplash.com/1600x900/?urbanization" alt="Impacto da Urbanização">
+            </div>
+        </section>
+
+        <section id="inovacao">
+            <h2>Inovação Rural</h2>
+            <p>A inovação tecnológica está transformando o campo, trazendo novas oportunidades para desenvolvimento agrícola e empreendedorismo rural. Descubra como a tecnologia está revolucionando práticas agrícolas e criando novos vínculos com as cidades.</p>
+            <div class="section-img">
+                <img src="https://source.unsplash.com/1600x900/?agriculture,technology" alt="Inovação Rural">
+            </div>
+        </section>
+
+        <section id="colaboracao">
+            <h2>Colaboração Campo-Cidade</h2>
+            <p>A colaboração entre áreas urbanas e rurais é essencial para um futuro sustentável. Desde parcerias em projetos agrícolas até iniciativas de desenvolvimento sustentável, explore como o campo e a cidade estão trabalhando juntos para resolver desafios comuns.</p>
+            <div class="section-img">
+                <img src="https://source.unsplash.com/1600x900/?collaboration" alt="Colaboração Campo-Cidade">
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Gostaria de saber mais sobre a conexão entre o campo e a cidade? Entre em contato conosco para mais informações e oportunidades de colaboração.</p>
+            <a href="mailto:contato@exemplo.com" class="cta-button">Entre em Contato</a>
+        </section>
     </div>
-    <div id="farm"></div>
-    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Conexão Campo e Cidade. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
